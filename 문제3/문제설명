@@ -1,0 +1,108 @@
+## 문자열 반복 출력 (C#)
+
+### 문제 이해
+문자열 `str`과 정수 `n`이 주어졌을 때, `str`을 `n`번 반복하여 출력하는 프로그램을 작성해야 합니다.
+
+### 제한 사항
+*   `str`의 길이는 1 이상 10 이하입니다.
+*   `n`은 1 이상 5 이하입니다.
+
+### 입력 예시
+string 5
+
+### 출력 예시
+stringstringstringstringstring
+
+
+### C# 코드 해설
+
+C#에서 문자열을 반복하여 출력하는 방법은 여러 가지가 있습니다. 몇 가지 방법을 소개하고 각각의 장단점을 비교해 보겠습니다.
+
+**1. `string.Concat` 메서드 사용**
+
+```csharp
+using System;
+using System.Linq;
+
+public class Example
+{
+    public static void Main()
+    {
+        string[] input = Console.ReadLine().Split(' ');
+        string str = input[0];
+        int n = int.Parse(input[1]);
+
+        string result = string.Concat(Enumerable.Repeat(str, n));
+        Console.WriteLine(result);
+    }
+}
+```
+
+*   **장점**: 코드가 간결하고 이해하기 쉽습니다.
+*   **단점**: 문자열 연결 시마다 새로운 문자열 객체를 생성하므로 성능이 좋지 않습니다. 특히 반복 횟수가 많아질수록 비효율적입니다.
+
+**2. `StringBuilder` 클래스 사용**
+
+```csharp
+using System;
+using System.Text;
+
+public class Example
+{
+    public static void Main()
+    {
+        string[] input = Console.ReadLine().Split(' ');
+        string str = input[0];
+        int n = int.Parse(input[1]);
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < n; i++)
+        {
+            sb.Append(str);
+        }
+        Console.WriteLine(sb.ToString());
+    }
+}
+```
+
+*   **장점**: 문자열 연결 작업을 효율적으로 처리하여 성능이 좋습니다. 특히 반복 횟수가 많을 때 유용합니다.
+*   **단점**: `StringBuilder` 클래스를 사용해야 하므로 코드가 약간 복잡해 보일 수 있습니다.
+
+**3. `string.Join` 메서드 사용**
+
+```csharp
+using System;
+using System.Linq;
+
+public class Example
+{
+    public static void Main()
+    {
+        string[] input = Console.ReadLine().Split(' ');
+        string str = input[0];
+        int n = int.Parse(input[1]);
+
+        string result = string.Join("", Enumerable.Repeat(str, n));
+        Console.WriteLine(result);
+    }
+}
+```
+
+*   **장점**: 코드가 간결하고 이해하기 쉽습니다.
+*   **단점**: `string.Concat` 메서드와 마찬가지로 문자열 연결 시마다 새로운 문자열 객체를 생성하므로 성능이 좋지 않습니다.
+
+### 권장 코드
+
+위 문제에서는 `n`의 값이 최대 5이므로 어떤 방법을 사용해도 큰 차이는 없지만, 일반적으로는 `StringBuilder` 클래스를 사용하는 것이 가장 좋습니다. `StringBuilder`는 문자열 연결 작업을 효율적으로 처리하므로 반복 횟수가 많아질수록 성능 차이가 커집니다.
+
+### 추가 설명
+
+*   `Console.ReadLine()`: 콘솔에서 한 줄을 읽어옵니다.
+*   `Split(' ')`: 공백을 기준으로 문자열을 분리하여 문자열 배열을 반환합니다.
+*   `int.Parse()`: 문자열을 정수로 변환합니다.
+*   `Enumerable.Repeat(str, n)`: `str`을 `n`번 반복하는 시퀀스를 생성합니다.
+*   `string.Concat()`: 문자열 시퀀스를 하나의 문자열로 연결합니다.
+*   `StringBuilder`: 문자열을 효율적으로 조작하기 위한 클래스입니다.
+*   `sb.Append(str)`: `StringBuilder` 객체 `sb`에 문자열 `str`을 추가합니다.
+*   `sb.ToString()`: `StringBuilder` 객체의 내용을 문자열로 반환합니다.
+*   `string.Join("", ...)`: 문자열 시퀀스를 빈 문자열("")을 구분자로 사용하여 연결합니다.
