@@ -13,17 +13,16 @@ public static void Main()
     }
 
 
-/Solution0.cs(15,38): error CS1525: Unexpected symbol `{'
-/Solution0.cs(15,40): error CS1525: Unexpected symbol `a'
-/Solution0.cs(15,42): error CS1002: ; expected
-/Solution0.cs(15,43): error CS1519: Unexpected symbol `)' in class, struct, or interface member declaration
-/Solution0.cs(16,26): error CS1519: Unexpected symbol `(' in class, struct, or interface member declaration
-/Solution0.cs(16,37): error CS1519: Unexpected symbol `}' in class, struct, or interface member declaration
-/Solution0.cs(16,40): error CS9010: Primary constructor body is not allowed
-/Solution0.cs(16,42): error CS1002: ; expected
-/Solution0.cs(16,43): error CS1519: Unexpected symbol `)' in class, struct, or interface member declaration
-/Solution0.cs(18,0): error CS1525: Unexpected symbol `}'
+**문제점**
 
-## 문제점:
-Split() 메서드를 사용하여 공백을 기준으로 문자열을 나눠 배열에 저장하였지만,
-출력할 때 " " 범위를 잘못 선정하였음.
+**1. `Console.Clear()`의 위치:**
+*   `Console.Clear()`는 콘솔 화면을 지우는 역할. 
+이 코드를 `Console.ReadLine()` 전에 위치시키면 사용자가 입력한 내용이 지워지기 때문에 입력값을 받을 수 없게 됨. 
+`Console.Clear()`는 필요한 경우 입력 *후*에 사용.
+
+**2. 문자열 보간:**
+*   C#에서 문자열 보간을 사용할 때, 변수를 중괄호 `{}`로 묶어야 함. 
+현재 코드에서는 `${a}`와 `${b}`가 올바르지 않은 위치에 있음.
+
+**3. 불필요한 공백:**
+*   `Console.WriteLine($"a = ", {a});`에서 `a = ` 뒤에 불필요한 공백이 있음.
