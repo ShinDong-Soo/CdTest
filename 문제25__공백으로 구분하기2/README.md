@@ -16,8 +16,8 @@ my_string에 나온 단어를 앞에서부터 순서대로 담은 문자열 배�
 
 ## 입출력 예
 my_string	result
-" i    love  you"	["i", "love", "you"]
-"    programmers  "	["programmers"]
+- " i    love  you"	["i", "love", "you"]
+- "    programmers  "	["programmers"]
 
 ---
 
