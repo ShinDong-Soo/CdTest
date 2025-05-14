@@ -36,6 +36,7 @@ code	result
 
 - code의 각 인덱스 i에 따라 다음과 같이 mode와 ret가 변합니다.
 i	ㅣ code[i]  ㅣ mode ㅣ	ret
+--ㅣ----------ㅣ------ㅣ----
 0	ㅣ "a"      ㅣ 0  ㅣ "a"
 1	ㅣ "b"      ㅣ 0  ㅣ	"a"
 2	ㅣ "c"      ㅣ 0  ㅣ "ac"
