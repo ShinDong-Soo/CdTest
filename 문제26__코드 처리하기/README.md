@@ -34,7 +34,6 @@ code	result
 
 ### 입출력 예 #1
 
-- code의 각 인덱스 i에 따라 다음과 같이 mode와 ret가 변합니다.
 | i  | code[i] | mode | ret     |
 |----|---------|------|---------|
 | 0  | "a"     | 0    | "a"     |
@@ -48,6 +47,8 @@ code	result
 | 8  | "a"     | 0    | "acba"  |
 | 9  | "b"     | 0    | "acba"  |
 | 10 | "c"     | 0    | "acbac" |
+
+- code의 각 인덱스 i에 따라 다음과 같이 mode와 ret가 변합니다.
 - 따라서 "acbac"를 return 합니다.
 
 [문제 해설 보기](./문제해설.md)
