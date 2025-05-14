@@ -1,5 +1,5 @@
 # 코드 처리하기
-제출 내역
+
 ## 문제 설명
 문자열 code가 주어집니다.
 code를 앞에서부터 읽으면서 만약 문자가 "1"이면 mode를 바꿉니다. mode에 따라 code를 읽어가면서 문자열 ret을 만들어냅니다.
@@ -21,13 +21,20 @@ code[idx]가 "1"이면 mode를 1에서 0으로 바꿉니다.
 ## 제한사항
 1 ≤ code의 길이 ≤ 100,000
 code는 알파벳 소문자 또는 "1"로 이루어진 문자열입니다.
-입출력 예
+
+---
+
+## 입출력 예
 code	result
 "abc1abc1abc"	"acbac"
-입출력 예 설명
-입출력 예 #1
 
-code의 각 인덱스 i에 따라 다음과 같이 mode와 ret가 변합니다.
+---
+
+## 입출력 예 설명
+
+### 입출력 예 #1
+
+- code의 각 인덱스 i에 따라 다음과 같이 mode와 ret가 변합니다.
 i	code[i]	mode	ret
 0	"a"	0	"a"
 1	"b"	0	"a"
@@ -40,4 +47,6 @@ i	code[i]	mode	ret
 8	"a"	0	"acba"
 9	"b"	0	"acba"
 10	"c"	0	"acbac"
-따라서 "acbac"를 return 합니다.
+- 따라서 "acbac"를 return 합니다.
+
+[문제 해설 보기](./문제해설.md)
