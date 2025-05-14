@@ -35,18 +35,18 @@ code	result
 ### 입출력 예 #1
 
 - code의 각 인덱스 i에 따라 다음과 같이 mode와 ret가 변합니다.
-i	ㅣ code[i] ㅣ mode ㅣ	ret
-0	ㅣ "a"  ㅣ 0  ㅣ "a"
-1	ㅣ "b"  ㅣ 0  ㅣ	"a"
-2	ㅣ "c"  ㅣ 0  ㅣ "ac"
-3 ㅣ	"1"	ㅣ 1	ㅣ"ac"
-4 ㅣ	"a"	ㅣ 1	ㅣ "ac"
-5 ㅣ	"b"	ㅣ 1	ㅣ "acb"
-6 ㅣ	"c"	ㅣ 1	ㅣ "acb"
-7 ㅣ	"1"	ㅣ 0	ㅣ "acb"
-8 ㅣ	"a"	ㅣ 0	ㅣ "acba"
-9 ㅣ	"b"	ㅣ 0	ㅣ "acba"
-10 ㅣ	"c"	ㅣ 0	ㅣ "acbac"
+i	ㅣ code[i]  ㅣ mode ㅣ	ret
+0	ㅣ "a"      ㅣ 0  ㅣ "a"
+1	ㅣ "b"      ㅣ 0  ㅣ	"a"
+2	ㅣ "c"      ㅣ 0  ㅣ "ac"
+3 ㅣ	"1"	    ㅣ 1	ㅣ"ac"
+4 ㅣ	"a"	    ㅣ 1	ㅣ "ac"
+5 ㅣ	"b"	    ㅣ 1	ㅣ "acb"
+6 ㅣ	"c"	    ㅣ 1	ㅣ "acb"
+7 ㅣ	"1"	    ㅣ 0	ㅣ "acb"
+8 ㅣ	"a"	    ㅣ 0	ㅣ "acba"
+9 ㅣ	"b"	    ㅣ 0	ㅣ "acba"
+10 ㅣ	"c"	    ㅣ 0	ㅣ "acbac"
 - 따라서 "acbac"를 return 합니다.
 
 [문제 해설 보기](./문제해설.md)
