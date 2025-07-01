@@ -14,8 +14,9 @@ queries의 원소는 [s, e]의 형태로 0 ≤ s ≤ e < my_string의 길이를 
 ---
 
 ## 입출력 예
-my_string	queries	result
-"rermgorpsam"	[[2, 3], [0, 7], [5, 9], [6, 10]]	"programmers"
+| my_string     | queries                           | result        |
+|---------------|-----------------------------------|---------------|
+| "rermgorpsam" | [[2, 3], [0, 7], [5, 9], [6, 10]] | "programmers" |
 
 ---
 
