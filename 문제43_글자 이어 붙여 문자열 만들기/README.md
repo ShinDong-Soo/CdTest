@@ -14,9 +14,10 @@ my_string의 원소는 영소문자로 이루어져 있습니다.
 ---
 
 ## 입출력 예
-my_string	index_list	result
-"cvsgiorszzzmrpaqpe"	[16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7]	"programmers"
-"zpiaz"	[1, 2, 0, 0, 3]	"pizza"
+| my_string            | index_list                               | result        |
+|----------------------|------------------------------------------|---------------|
+| "cvsgiorszzzmrpaqpe" | [16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7] | "programmers" |
+| "zpiaz"              | [1, 2, 0, 0, 3]                          | "pizza"       |
 
 ---
 
