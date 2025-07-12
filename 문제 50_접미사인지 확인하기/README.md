@@ -14,11 +14,12 @@ my_string과 is_suffix는 영소문자로만 이루어져 있습니다.
 ---
 
 ## 입출력 예
-my_string	is_suffix	result
-"banana"	"ana"	1
-"banana"	"nan"	0
-"banana"	"wxyz"	0
-"banana"	"abanana"	0
+| my_string | is_suffix | result |
+|-----------|-----------|--------|
+| "banana"  | "ana"     | 1      |
+| "banana"  | "nan"     | 0      |
+| "banana"  | "wxyz"    | 0      |
+| "banana"  | "abanana" | 0      |
 
 ---
 
