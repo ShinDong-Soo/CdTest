@@ -25,7 +25,7 @@ my_string은 알파벳 소문자로만 이루어져 있습니다.
 ### 입출력 예 #1
 예제 1번의 my_string는 "banana"로 모든 접미사는 문제의 설명과 같습니다. 이를 사전순으로 정렬하면 "a", "ana", "anana", "banana", "na", "nana"이므로 ["a", "ana", "anana", "banana", "na", "nana"]를 return 합니다.
 
-## 입출력 예 #2
+### 입출력 예 #2
 예제 2번의 my_string는 "programmers"이고 모든 접미사는 "programmers", "rogrammers", "ogrammers", "grammers", "rammers", "ammers", "mmers", "mers", "ers", "rs", "s"입니다. 이를 사전순으로 정렬한 문자열 배열 ["ammers", "ers", "grammers", "mers", "mmers", "ogrammers", "programmers", "rammers", "rogrammers", "rs", "s"]를 return 합니다.
 
 [문제 해설 보기](./문제해설.md)
