@@ -14,11 +14,12 @@ my_string과 is_prefix는 영소문자로만 이루어져 있습니다.
 ---
 
 ## 입출력 예
-my_string	is_prefix	result
-"banana"	"ban"	1
-"banana"	"nan"	0
-"banana"	"abcd"	0
-"banana"	"bananan"	0
+| my_string | is_prefix | result |
+|-----------|-----------|--------|
+| "banana"  | "ban"     | 1      |
+| "banana"  | "nan"     | 0      |
+| "banana"  | "abcd"    | 0      |
+| "banana"  | "bananan" | 0      |
 
 ---
 
