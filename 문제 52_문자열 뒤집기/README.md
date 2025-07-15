@@ -13,9 +13,10 @@ my_string은 숫자와 알파벳으로만 이루어져 있습니다.
 ---
 
 ## 입출력 예
-my_string	s	e	result
-"Progra21Sremm3"	6	12	"ProgrammerS123"
-"Stanley1yelnatS"	4	10	"Stanley1yelnatS"
+| my_string         | s | e  | result            |
+|-------------------|---|----|-------------------|
+| "Progra21Sremm3"  | 6 | 12 | "ProgrammerS123"  |
+| "Stanley1yelnatS" | 4 | 10 | "Stanley1yelnatS" |
 
 ---
 
