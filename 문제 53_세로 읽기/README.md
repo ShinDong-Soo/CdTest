@@ -32,6 +32,7 @@ m은 my_string 길이의 약수로만 주어집니다.
 | f   | p   | n   | d   |
 | o   | p   | l   | j   |
 | h   | y   | g   | c   |
+
 2열에 적힌 글자를 세로로 읽으면 happy이므로 "happy"를 return 합니다.
 
 ### 입출력 예 #2
